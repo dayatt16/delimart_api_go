@@ -37,8 +37,8 @@ func main() {
 	var err error
 
 	// Replace with your database credentials
-	// dsn := "root:@tcp(127.0.0.1:3306)/db_ipat_uas_final"
-	dsn := "delimart:8W@jQeSYDTPwpa!@tcp(mysql-delimart.alwaysdata.net:3306)/delimart_db_ipat_uas"
+	dsn := "root:@tcp(127.0.0.1:3306)/db_ipat_uas_final"
+	
 	db, err = sql.Open("mysql", dsn)
 	if err != nil {
 		log.Fatalf("Failed to open database: %v", err)
